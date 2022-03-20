@@ -1,7 +1,7 @@
 <?php
-
+const path_test = "php/test.php";
 require('../vendor/autoload.php');
-require("/php/test.php");
+require(path_test);
 
 $app = new Silex\Application();
 $app['debug'] = true;
