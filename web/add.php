@@ -1,5 +1,6 @@
 <?php
-   require("/cors.php");
+   header("Access-Control-Allow-Origin: *");
+   header("Access-Control-Allow-Headers: *");
 
    function add($a,$b){
       $x = $a;
