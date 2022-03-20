@@ -1,4 +1,6 @@
 <?php
+   require("/cors.php");
+
    function add($a,$b){
       $x = $a;
       echo $x;
