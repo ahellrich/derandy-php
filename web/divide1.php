@@ -5,10 +5,10 @@
    function div1($a,$b){
       $x = $a;
       $y = $b;
-      if($y != 0)
-      echo $x / $y;
-      else
-      echo "undefined";
+      if($y != 0){
+      echo $x / $y;}
+      else{
+      echo "undefined";}
    }
    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       
