@@ -1,9 +1,9 @@
 <?php
 
 require('../vendor/autoload.php');
-require("/cors.php");
 
-cors();
+
+
 
 use Symfony\Component\HttpFoundation\Response;
 
