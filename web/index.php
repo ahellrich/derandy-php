@@ -1,5 +1,5 @@
 <?php
-const path_test = "php/add.php";
+
 require('../vendor/autoload.php');
 use Symfony\Component\HttpFoundation\Response;
 
