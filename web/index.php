@@ -24,7 +24,7 @@ $app->get('/', function() use($app) {
 });
 
 $app->get('/add.php', function()  {
-  add(3,5);
+  return add(3,5);
 });
 
 $app->run();
