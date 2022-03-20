@@ -23,7 +23,7 @@ $app->get('/', function() use($app) {
 });
 
 $app-> get('/test.php', function() use($app){
-  return $app ->$_GET("../../web/php/test.php");
+  return "../../web/php/test.php";
 });
 
 $app->run();
