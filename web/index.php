@@ -23,7 +23,7 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
-$app->get('/test.php', function()  {
+$app->get('/add.php', function()  {
   add(3,5);
 });
 
