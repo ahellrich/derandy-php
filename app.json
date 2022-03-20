@@ -1,0 +1,6 @@
+{
+    "name": "derandy-php",
+    "description": "a simple php server",
+    "repository": "https://git.heroku.com/derandy-node.git",
+    "addons": []
+  }
