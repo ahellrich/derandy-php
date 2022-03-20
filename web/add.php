@@ -8,6 +8,7 @@
     echo $x + $y;
    }
    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      
       add($_POST['x'],$_POST['y']);
       }
       if ($_SERVER['REQUEST_METHOD'] === 'GET') {
