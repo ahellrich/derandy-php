@@ -1,6 +1,7 @@
 <?php
 
 require('../vendor/autoload.php');
+require("../../web/php/test.php");
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -23,7 +24,7 @@ $app->get('/', function() use($app) {
 });
 
 $app-> get('/test.php', function() use($app){
-  return "../../web/php/test.php";
+  return gib_laut();
 });
 
 $app->run();
