@@ -24,7 +24,7 @@ $app->get('/', function() use($app) {
 });
 
 $app-> get('/test.php', function() use($app){
-  return $app -> render(path_test);
+  return $app['php'] -> render(path_test);
 });
 
 $app->run();
