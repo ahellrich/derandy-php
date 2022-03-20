@@ -1,6 +1,8 @@
 <?php
 
 require('../vendor/autoload.php');
+require("/cors.php");
+
 use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();

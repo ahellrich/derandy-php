@@ -7,7 +7,7 @@
     echo $x + $y;
    }
    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      add($_POST[0],$_POST[1]);
+      add($_POST['x'],$_POST['y']);
       }
       if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       echo "Schön, dass Sie hier sind, aber hier gibt es nichts zu sehen, die Datei ist für POST Befehle gedacht";
