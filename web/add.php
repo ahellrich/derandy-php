@@ -1,6 +1,6 @@
 <?php
    function add(){
-    $x = $_POST['x'];
-    $y = $_POST['y'];
+    $x = 3;
+    $y = 5;
     echo $x + $y;
    }
