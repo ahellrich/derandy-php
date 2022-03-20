@@ -22,4 +22,8 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+$app-> get('/test.php', function() use($app){
+  return $app ->$_GET("/web/php/test.php");
+});
+
 $app->run();
