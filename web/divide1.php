@@ -11,9 +11,10 @@
    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       if($_POST['y']!=0)
       div1($_POST['x'],$_POST['y']);
-      }
       else
       echo NAN;
+      }
+      
       if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       echo "Schön, dass Sie hier sind, aber hier gibt es nichts zu sehen, die Datei ist für POST Befehle gedacht";
       }
