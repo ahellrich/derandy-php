@@ -24,7 +24,7 @@ $app->get('/', function() use($app) {
 });
 
 $app-> get('/test.php', function() use($app){
-  return gib_laut();
+  return path_test;
 });
 
 $app->run();
