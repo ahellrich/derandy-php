@@ -1,7 +1,7 @@
 <?php
 const path_test = "php/add.php";
 require('../vendor/autoload.php');
-require('php/add.php');
+use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -23,8 +23,6 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
-$app->get('/add.php', function()  {
-  return add(3,5);
-});
+
 
 $app->run();
