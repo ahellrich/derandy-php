@@ -1,7 +1,6 @@
 <?php
 const path_test = "php/test.php";
 require('../vendor/autoload.php');
-require("php/test.php");
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -24,7 +23,7 @@ $app->get('/', function() use($app) {
 });
 
 $app-> get('/test.php', function() use($app){
-  return $app['php'] -> render(path_test);
+  return $app -> render(path_test);
 });
 
 $app->run();
