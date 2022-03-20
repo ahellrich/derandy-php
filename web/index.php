@@ -1,6 +1,7 @@
 <?php
-const path_test = "php/test.php";
+const path_test = "php/add.php";
 require('../vendor/autoload.php');
+require('php/add.php');
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -22,8 +23,8 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
-$app-> get('/test.php', function() use($app){
-  return $app -> render(path_test);
+$app->post('/test.php', function()  {
+  add(3,5);
 });
 
 $app->run();
