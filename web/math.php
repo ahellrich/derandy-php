@@ -68,7 +68,7 @@ function call_functions($op,$zahl1,$zahl2){
 }
 
    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      call_functions($_POST['op'],$_POST['x'], $POST['y']);
+      call_functions($_POST['op'],$_POST['x'], $_POST['y']);
       }
       if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       echo "Schön, dass Sie hier sind, aber hier gibt es nichts zu sehen, die Datei ist für POST Befehle gedacht";
