@@ -2,7 +2,7 @@
    header("Access-Control-Allow-Origin: *");
    header("Access-Control-Allow-Headers: *");
 
-   function div1($a,$b){
+   function div2($a,$b){
       $x = $a;
       $y = $b;
      
@@ -10,7 +10,7 @@
    }
    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       if($_POST['x']!=0)
-      div1($_POST['x'],$_POST['y']);
+      div2($_POST['x'],$_POST['y']);
       else
       echo NAN;
       }
