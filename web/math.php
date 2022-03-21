@@ -47,39 +47,40 @@
      }
 
 
-function call_functions($op,$zahl1,$zahl2){
-    switch ($op) {
-        case "add":            
-            add($zahl1,$zahl2);
-            break;
+    function call_functions($op,$zahl1,$zahl2){
+        switch ($op) {
+            case "add":            
+                add($zahl1,$zahl2);
+                break;
 
-        case "divide1":
-            div1($zahl1,$zahl2);
-            break;
+            case "divide1":
+                div1($zahl1,$zahl2);
+                break;
 
-        case "divide2":
-            div2($zahl1,$zahl2);
-            break;
+            case "divide2":
+                div2($zahl1,$zahl2);
+                break;
 
-        case "multiply":            
-            mult($zahl1,$zahl2);
-            break;
-    
-        case "subtract1":
-            sub1($zahl1,$zahl2);
-            break;
-    
-        case "subtract2":
-            sub2($zahl1,$zahl2);
-            break;
+            case "multiply":            
+                mult($zahl1,$zahl2);
+                break;
+        
+            case "subtract1":
+                sub1($zahl1,$zahl2);
+                break;
+        
+            case "subtract2":
+                sub2($zahl1,$zahl2);
+                break;
+        }
     }
-}
 
-   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       call_functions($_POST['op'],$_POST['x'], $_POST['y']);
-      }
-      if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    }
+    
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       echo "Schön, dass Sie hier sind, aber hier gibt es nichts zu sehen, die Datei ist für POST Befehle gedacht";
-      }
+    }
 
     
