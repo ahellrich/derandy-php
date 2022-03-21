@@ -11,13 +11,21 @@
    function div1($a,$b){
         $x = $a;
         $y = $b;   
-        echo $x / $y;
+        if($y!=0){
+            echo $x / $y;
+        }
+        else
+            echo NAN;
     }
 
     function div2($a,$b){
         $x = $a;
-        $y = $b;       
-        echo $y / $x;
+        $y = $b; 
+        if($x!=0){
+            echo $y / $x;
+        }
+        else
+            echo NAN;
      }
 
      function mult($a,$b){
